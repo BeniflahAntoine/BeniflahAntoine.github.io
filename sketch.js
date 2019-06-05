@@ -34,19 +34,19 @@ function draw() {
         paddle1.yvel = 0;
     }
     else if(keyIsDown(87) && ((paddle1.y - paddle1.height/2) >= 0)) {
-        paddle1.yvel = -5;
+        paddle1.yvel = -10;
     }
     else if(keyIsDown(83) && ((paddle1.y + paddle1.height/2) <= height)) {
-        paddle1.yvel = 5;
+        paddle1.yvel = 10;
     }
     if(keyIsDown(UP_ARROW) && keyIsDown(DOWN_ARROW) || !keyIsDown(UP_ARROW) && !keyIsDown(DOWN_ARROW)) {
         paddle2.yvel = 0;
     }
     else if(keyIsDown(UP_ARROW) && ((paddle2.y - paddle2.height/2) >= 0)) {
-        paddle2.yvel = -5;
+        paddle2.yvel = -10;
     }
     else if(keyIsDown(DOWN_ARROW) && ((paddle2.y + paddle2.height/2) <= height)) {
-        paddle2.yvel = 5;
+        paddle2.yvel = 10;
     }
     if(keyIsDown(LEFT_ARROW)) {
         if(ball.hit() === 2) {
