@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <style>
+            html {
+                background-color:green;
+            }
+            #header {
+                font-family:Arial;
+                text-align:center;
+                color:white;
+            }
+            #instructions {
+                text-align:center;
+                font-size:16px;
+                font-weight:bold;
+                position:relative;
+                top:-17.5px;
+            }
+            #surprise {
+                text-align:center;
+                font-size:16px;
+                font-weight:bold;
+                position:relative;
+                top:-25px;
+            }
+            #warning {
+                text-align:center;
+                font-size:14px;
+                position:relative;
+                top:-35px;
+            }
+            #tip {
+                text-align:center;
+                font-size:12px;
+                position:relative;
+                top:-45px;
+            }
+        </style>
+        <title>Pong Game</title>
+        <h1 id = "header">Pong Game</h1>
+    </head>
+    <body>
+        <p id = "instructions">Press "W" and "S" to move the Red Paddle and press the "up arrow key" and "down arrow key" to move the Blue Paddle.</p>
+        <p id = "surprise">In order to spice things up, press "D" for the Red Paddle and "left arrow key" for the Blue Paddle to speed up the ball!</p>
+        <p id = "warning">Warning: The ball can get through the paddles if it gets faster than the speed of light!</p>
+        <p id = "tip">Tip: If the ball gets stuck in the paddle, press "D" for the Red Paddle and "left arrow key" for the Blue Paddle, to get the ball off.</p>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+        <script src = "sketch.js"></script>
+    </body>
+</html>
